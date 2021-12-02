@@ -1,0 +1,8 @@
+# Challenge 2 BMI calculator
+
+height = input("Height in m?\n")
+weight = input("Weight in kg?\n")
+h = float(height)
+w = str(weight)
+bmi = h/(w ** 2)
+print(str(bmi))
