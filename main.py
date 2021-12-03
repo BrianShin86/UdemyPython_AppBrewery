@@ -74,9 +74,25 @@
 #     print(f"Your BMI is {bmi_i}, you have a normal weight.")
 # elif bmi_i < 30:
 #     print(f"Your BMI is {bmi_i}, you are slightly overweight.")
-# elif bmi_i <= 35:
+# elif bmi_i < 35:
 #     print(f"Your BMI is {bmi_i}, you are obese.")
 # else:
 #     print(f"Your BMI is {bmi_i}, you are clinically obese.")
 
-Challenge 3
+# #Challenge 3
+# 🚨 Don't change the code below 👇
+# year = int(input("Which year do you want to check? "))
+# # 🚨 Don't change the code above 👆
+
+# #Write your code below this line 👇
+# if year % 4 == 0:
+#     if year % 100 == 0:
+#         if year % 400 == 0:
+#             print("Leap year.")
+#         else:
+#             print("Not leap year.")
+#     else:
+#         print("Leap year.")
+# else:
+#     print("Not leap year.")
+
