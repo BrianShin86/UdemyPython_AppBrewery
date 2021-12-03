@@ -8,3 +8,8 @@ names = names_string.split(", ")
 list_number = len(names)
 choice = random.randint(0 , (list_number-1))
 print(f"{names[choice]} is going to buy the meal today")
+
+#OR
+
+choice = random.choice(names)
+print(choice + " is going to but the meal today")
