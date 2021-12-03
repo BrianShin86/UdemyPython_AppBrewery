@@ -106,7 +106,7 @@
 #   if age < 12:
 #     bill = 5
 #     print("Child tickets are $5.")
-#   elif 12 <= 18:
+#   elif age <= 18:
 #     bill = 7
 #     print("Youth tickets are $7.")
 #   else:
@@ -121,3 +121,61 @@
 # else:
 #   print("Sorry, you have to grow taller before you can ride.")
 
+# Practice 4
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+
+if height >= 120:
+  print("You can ride the rollercoaster!")
+  age = int(input("What is your age? "))
+  if age >= 45 and age <= 55:
+    bill = 0
+    print("Everythin is goingto be ok. Have a free ride on us!")
+  elif age < 12:
+    bill = 5
+    print("Child tickets are $5.")
+  elif age <= 18:
+    bill = 7
+    print("Youth tickets are $7.")
+  else:
+    bill = 12
+    print("Adult tickets are $12")
+  
+  wants_photo = input("Do you want a photo taken?  Y or N. ")
+  if wants_photo == "Y":
+    bill += 3
+    
+  print(f"Your final bill is ${bill}")
+else:
+  print("Sorry, you have to grow taller before you can ride.")
+  
+# Challenge 4
+# 🚨 Don't change the code below 👇
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+testname = name1.lower() + " " + name2.lower()
+
+tc = int(testname.count("t"))
+rc = int(testname.count("r"))
+uc = int(testname.count("u"))
+ec = int(testname.count("e"))
+
+lc = int(testname.count("l"))
+oc = int(testname.count("o"))
+vc = int(testname.count("v"))
+ec = int(testname.count("e"))
+
+score_true = str(tc + rc + uc + ec)
+score_love = str(lc + oc + vc + ec)
+lovescore = int(score_true + score_love)
+
+if lovescore > 90 or lovescore < 10:
+  print(f"Your score is {lovescore}, you go together like coke and mentos.")
+elif lovescore >= 40 and lovescore <= 50:
+  print(f"Your score is {lovescore}, you are alright together.")
+else:
+  print(f"Your score is {lovescore}.")
