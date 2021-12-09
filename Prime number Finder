@@ -1,5 +1,4 @@
 #Write your code below this line 👇
-import math
 def prime_checker(number):
     if number <= 1 or number % 1 > 0:
         return print("It's not a prime number.")
