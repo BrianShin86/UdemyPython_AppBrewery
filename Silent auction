@@ -1,0 +1,29 @@
+from replit import clear
+#HINT: You can call clear() to clear the output in the console.
+from art import logo
+print(logo)
+print("Welcome to the Silent Auction!!")
+
+all_bids = {}
+end_auction = False
+
+def auction_winner(bidding_record):
+  highest_bid = 0
+  winner = ""
+  for bidder in bidding_record:
+    bid_amount = bidding_record[bidder]
+    if bid_amount > highest_bid:
+      highest_bid = bid_amount
+      winner = bidder
+  print(f"The winner is {winner} with a bid of ${highest_bid}")
+
+while not end_auction:
+  name_entry = input("What is your name?\n")
+  bids_entry = int(input("Type your bid amount.\n$ "))
+  all_bids[name_entry] = bids_entry
+  additional_user = input("Is there additional User?\nType 'yes' if there is additional user. Otherwise type 'no'.\n")
+  if additional_user == "no":
+    end_auction = True
+    auction_winner(all_bids)
+  elif additional_user == "yes":
+    clear()
